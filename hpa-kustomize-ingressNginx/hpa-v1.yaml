@@ -10,10 +10,21 @@ spec:
   minReplicas: 1
   maxReplicas: 5
   metrics:
-    - type: Resource
-      resource:
-        name: cpu
+    # - type: Resource
+    #   resource:
+    #     name: cpu
+    #     target:
+    #       type: Utilization
+    #       averageUtilization: 50
+    - type: Object
+      object:
+        metric:
+          name: requests-per-second
+        describedObject: 
+          apiVersion: networking.k8s.io/v1
+          kind: Ingress
+          name: main-route
         target:
-          type: Utilization
-          averageUtilization: 50
+          type: value
+          value: 100
 
