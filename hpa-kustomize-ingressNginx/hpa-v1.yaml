@@ -25,6 +25,6 @@ spec:
           kind: Ingress
           name: main-route
         target:
-          type: value
+          type: Value
           value: 100
 
