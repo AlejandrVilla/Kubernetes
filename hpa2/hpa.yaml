@@ -37,7 +37,7 @@ spec:
 
 status:
   observedGeneration: 1
-  lastScaleTime: 100
+  lastScaleTime: "2024-02-12T12:34:56Z" 
   currentReplicas: 1
   desiredReplicas: 1
   currentMetrics:
