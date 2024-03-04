@@ -5,7 +5,10 @@ metadata:
   labels:
     run: php-apache
 spec:
+  type: LoadBalancer
   ports:
   - port: 80
+    targetPort:: 80
+    nodePOrt: 30000
   selector:
     run: php-apache
