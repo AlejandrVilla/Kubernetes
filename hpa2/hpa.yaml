@@ -35,18 +35,18 @@ spec:
   #       type: Value
   #       value: 10k
 
-status:
-  observedGeneration: 1
-  lastScaleTime: "2024-02-12T12:34:56Z" 
-  currentReplicas: 1
-  desiredReplicas: 1
-  currentMetrics:
-  - type: Resource
-    resource:
-      name: cpu
-    current:
-      averageUtilization: 0
-      averageValue: 0
+# status:
+#   observedGeneration: 1
+#   lastScaleTime: "2024-02-12T12:34:56Z" 
+#   currentReplicas: 1
+#   desiredReplicas: 1
+#   currentMetrics:
+#   - type: Resource
+#     resource:
+#       name: cpu
+#     current:
+#       averageUtilization: 0
+#       averageValue: 0
   # - type: Object
   #   object:
   #     metric:
